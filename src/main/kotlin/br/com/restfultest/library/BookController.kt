@@ -13,5 +13,5 @@ class BookController {
 
     @GetMapping("/books")
     fun getBooks(@RequestParam(value = "name", defaultValue = "World") name: String) =
-            Book(counter.incrementAndGet(), "Hello, $name")
+            Book(counter.incrementAndGet(), "Hello, $name", "Teste", 123, "PT-BR")
 }
